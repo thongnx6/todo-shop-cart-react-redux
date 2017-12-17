@@ -10,7 +10,7 @@ const mapStateToProps = (state, props) => {
 
 const mapDispatchToProps = (dispatch) => ({
     addToCart: (id) => dispatch(addToCart(id)),
-    removeFromCart: (id) => dispatch(removeFromCart(id))
+    removeFromCart: (item) => dispatch(removeFromCart(item))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Product);

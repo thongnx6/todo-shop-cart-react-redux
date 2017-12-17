@@ -54,6 +54,27 @@ export function removeFromCart(productId) {
     }
 }
 
+export function onPlus(product) {
+    product.qty++;
+    return {
+        type: CART_REMOVE,
+        payload: {
+            product
+        }
+    }
+}
+
+export function onMinus(product) {
+    product.qty--;
+    
+    return {
+        type: CART_REMOVE,
+        payload: {
+            product
+        }
+    }
+}
+
 // selectors
 export function isInCart(state, props) {
     return state.cart.items.indexOf(props.id) !== -1;
@@ -70,6 +91,6 @@ export function getCurrency(state, props) {
 export function getTotal(state, props) {
     return state.cart.items.reduce((acc, id) => {
         const item = getProduct(state, { id });
-        return acc + item.price;
+        return acc + item.price * item.qty;
     }, 0);
 }

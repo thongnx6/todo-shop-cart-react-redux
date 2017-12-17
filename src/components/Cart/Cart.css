@@ -21,6 +21,8 @@
 }
 
 .cart-item__price {
+  width: 300px;
+  text-align: right;
   font-weight: bold;
 }
 

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 class Product extends Component {
     handleClick = () => {
         const { id, addToCart, removeFromCart, isInCart } = this.props;
-
         if (isInCart) {
             removeFromCart(id);
         } else {
