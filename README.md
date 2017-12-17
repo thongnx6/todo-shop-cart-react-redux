@@ -3,7 +3,7 @@
 example of shopping cart implemented in react.js and redux.js using bootstrap^3.3.7
 
 ## demo
-[![DEMO HERE](https://github.com/thongnx6/todo-shop-cart-react-redux/blob/master/public/demo.mov)]
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/cCMyxIR0FSU/0.jpg)](http://www.youtube.com/watch?v=cCMyxIR0FSU&feature=youtu.be)
 
 
 ## getting started
